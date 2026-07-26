@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <title>Page Not Found - INGBOEX</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
+    <link rel="apple-touch-icon" href="/images/favicon-32.png">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Page Not Found - INGBOEX">
+    <meta property="og:description" content="The page you are looking for could not be found.">
+    <meta property="og:image" content="https://ingboex.com/images/hero-banner.jpg">
+    <meta property="og:url" content="https://ingboex.com/404.html">
+    <meta property="og:site_name" content="INGBOEX">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Page Not Found - INGBOEX">
+    <meta name="twitter:description" content="The page you are looking for could not be found.">
+    <meta name="twitter:image" content="https://ingboex.com/images/hero-banner.jpg">
+</head>
+<body>
+
+    <!-- ==================== Header / Navigation ==================== -->
+    <header class="site-header" id="header">
+        <nav class="main-nav" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="index.html" class="logo" aria-label="INGBOEX Home">
+                    <i class="fa-solid fa-bolt logo-icon"></i>
+                    <span class="logo-text">INGBOEX</span>
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="products.html" class="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                            Products <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-label="Product categories">
+                            <li><a href="products/hair-dryer.html">Hair Dryer</a></li>
+                            <li><a href="products/hot-air-brush.html">Hot Air Brush</a></li>
+                            <li><a href="products/hair-straightener.html">Hair Straightener</a></li>
+                            <li><a href="products/hair-curler.html">Hair Curler</a></li>
+                            <li><a href="products/hair-straightening-brush.html">Hair Straightening Brush</a></li>
+                            <li><a href="products/shaver.html">Shaver</a></li>
+                            <li><a href="products/hair-clipper.html">Hair Clipper</a></li>
+                            <li><a href="products/electric-precision-trimmer.html">Electric Precision Trimmer</a></li>
+                            <li><a href="products/epilator-and-grooming.html">Epilator &amp; Grooming</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="faq.html" class="nav-link">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== 404 Content ==================== -->
+    <main style="min-height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--color-gray-100);text-align:center;padding:100px 20px 60px;">
+        <div style="font-size:6rem;font-weight:800;color:var(--color-primary);line-height:1;margin-bottom:20px;">404</div>
+        <h1 style="font-size:1.8rem;margin-bottom:15px;">Oops! Page Not Found</h1>
+        <p style="color:var(--color-gray-600);font-size:1.1rem;max-width:500px;margin-bottom:30px;">
+            The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
+        </p>
+
+        <!-- Search Box -->
+        <div style="max-width:500px;width:100%;margin-bottom:40px;">
+            <div style="position:relative;">
+                <input type="search" id="search-input" placeholder="Search our products..." style="width:100%;padding:14px 50px 14px 20px;border:2px solid var(--color-gray-300);border-radius:var(--radius-lg);font-size:1rem;outline:none;transition:var(--transition);" onfocus="this.style.borderColor='var(--color-primary)'" onblur="this.style.borderColor='var(--color-gray-300)'">
+                <button onclick="performSearch()" aria-label="Search" style="position:absolute;right:8px;top:50%;transform:translateY(-50%);background:var(--color-primary);color:white;border:none;border-radius:var(--radius-md);width:36px;height:36px;cursor:pointer;display:flex;align-items:center;justify-content:center;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div style="display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-bottom:50px;">
+            <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-house"></i> Back to Home</a>
+            <a href="products.html" class="btn btn-outline"><i class="fa-solid fa-boxes-stacked"></i> View Products</a>
+            <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+        </div>
+
+        <!-- Popular Product Links -->
+        <div style="max-width:600px;width:100%;">
+            <h2 style="font-size:1.2rem;color:var(--color-gray-700);margin-bottom:20px;">Popular Products</h2>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+                <a href="products/hair-dryer.html" class="btn btn-sm btn-outline">Hair Dryer</a>
+                <a href="products/hot-air-brush.html" class="btn btn-sm btn-outline">Hot Air Brush</a>
+                <a href="products/hair-straightener.html" class="btn btn-sm btn-outline">Hair Straightener</a>
+                <a href="products/shaver.html" class="btn btn-sm btn-outline">Shaver</a>
+                <a href="products/hair-clipper.html" class="btn btn-sm btn-outline">Hair Clipper</a>
+                <a href="products/epilator-and-grooming.html" class="btn btn-sm btn-outline">Epilator</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- ==================== Footer ==================== -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>INGBOEX</span>
+                    </div>
+                    <p class="footer-desc">
+                        Wenzhou Ingboex Technology Co., Ltd. is a professional manufacturer of personal care appliances with 18+ years of experience. We provide OEM/ODM services to brands and distributors worldwide.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/ingboex" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ingboex" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/ingboex" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ingboex" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col footer-products">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="products/hair-dryer.html">Hair Dryer</a></li>
+                        <li><a href="products/hot-air-brush.html">Hot Air Brush</a></li>
+                        <li><a href="products/hair-straightener.html">Hair Straightener</a></li>
+                        <li><a href="products/hair-curler.html">Hair Curler</a></li>
+                        <li><a href="products/shaver.html">Shaver</a></li>
+                        <li><a href="products/hair-clipper.html">Hair Clipper</a></li>
+                        <li><a href="products/epilator-and-grooming.html">Epilator &amp; Grooming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-quick-links">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="products.html">All Products</a></li>
+                        <li><a href="news.html">News &amp; Blog</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col footer-contact">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>3rd Floor No.1 Building, No.50 Dongfang South Road, Wenzhou National University Science Park, Ouhai District, Wenzhou, Zhejiang, China</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+8613758758439">+86-137 5875 8439</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="#" data-email="sarahchang" class="email-protected">sarahchang@ingboex.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="https://wa.me/8615167896815?text=Need%20wholesale%20personal%20care%20appliances%20or%20OEM%2FODM%20custom%20service%3F%20Please%20send%20product%20type%2C%20quantity%20%26%20target%20market%20for%20quotation." target="_blank" rel="noopener noreferrer">+86-151 6789 6815</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Wenzhou Ingboex Technology Co., Ltd. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== Floating Buttons ==================== -->
+    <a href="https://wa.me/8615167896815?text=Need%20wholesale%20personal%20care%20appliances%20or%20OEM%2FODM%20custom%20service%3F%20Please%20send%20product%20type%2C%20quantity%20%26%20target%20market%20for%20quotation." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- ==================== Scripts ==================== -->
+    <script src="js/main.js?v=2.0"></script>
+    <script>
+        function performSearch() {
+            var query = document.getElementById('search-input').value.trim();
+            if (query) {
+                window.location.href = 'products.html?q=' + encodeURIComponent(query);
+            }
+        }
+        document.getElementById('search-input').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    </script>
+</body>
+</html>

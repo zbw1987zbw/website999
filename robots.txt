@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ingboex.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 5
