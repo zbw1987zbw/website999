@@ -26,7 +26,7 @@
   --color-red: #ef4444;
   --color-red-light: #fef2f2;
 
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', monospace;
 
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
@@ -50,6 +50,19 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* --- Screen-reader only (视觉隐藏，保留无障碍/SEO 用 h1) --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 html {
@@ -348,10 +361,8 @@ p { margin-bottom: 1rem; }
 .hero-content {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+  max-width: 640px;
+  text-align: left;
 }
 
 .hero-text h1 {
@@ -449,7 +460,7 @@ p { margin-bottom: 1rem; }
 /* --- Why Choose Us --- */
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
 
@@ -631,32 +642,23 @@ p { margin-bottom: 1rem; }
 
 /* --- Page Banner --- */
 .page-banner {
+  position: relative;
   background: var(--color-gray-100);
   color: var(--color-dark);
-  padding: 60px 0;
+  padding: 0;                       /* 不再用 padding 撑高度 */
+  min-height: 200px;                /* 窄屏保底，避免文字被压扁 */
+  aspect-ratio: 24 / 5;             /* 1920×400 原图比例，全尺寸不裁切 */
+  display: flex;
+  align-items: center;              /* 标题+面包屑垂直居中于图上 */
+  justify-content: center;
   text-align: center;
   border-bottom: 1px solid var(--color-gray-200);
+  overflow: hidden;
 }
 
 .page-banner h1 {
   color: var(--color-dark);
   margin-bottom: 10px;
-}
-
-.page-banner .breadcrumb {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  color: var(--color-gray-500);
-  font-size: 0.9rem;
-}
-
-.page-banner .breadcrumb a {
-  color: var(--color-gray-600);
-}
-
-.page-banner .breadcrumb span {
-  color: var(--color-primary);
 }
 
 /* --- About Page --- */
@@ -1317,7 +1319,8 @@ p { margin-bottom: 1rem; }
   border: 1px solid var(--color-gray-200);
 }
 
-.category-large-image .image-placeholder img {
+.category-large-image .image-placeholder picture,
+.category-large-image .image-placeholder picture img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1325,7 +1328,7 @@ p { margin-bottom: 1rem; }
   transition: transform 0.3s ease;
 }
 
-.category-large-card:hover .image-placeholder img {
+.category-large-card:hover .image-placeholder picture img {
   transform: scale(1.05);
 }
 
@@ -1403,6 +1406,10 @@ p { margin-bottom: 1rem; }
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1511,6 +1518,10 @@ p { margin-bottom: 1rem; }
 
   .category-large-content .btn {
     align-self: center;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1848,7 +1859,7 @@ p { margin-bottom: 1rem; }
 
 /* --- Hero Section --- */
 .hero-section {
-  background: url('../images/hero-banner.jpg') center center / cover no-repeat;
+  background: url('../images/hero-banner.webp') center center / cover no-repeat;
   color: var(--color-white);
   padding: 120px 0 100px;
   position: relative;
@@ -2036,7 +2047,11 @@ p { margin-bottom: 1rem; }
   overflow: hidden;
 }
 
-.category-icon img {
+/* Category icon <img> is wrapped in <picture> — make <picture> fill the
+   4/3 box (WebP <picture> regression fix). */
+.category-icon > picture,
+.category-icon > picture img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2044,7 +2059,7 @@ p { margin-bottom: 1rem; }
   transition: transform 0.3s ease;
 }
 
-.category-card:hover .category-icon img {
+.category-card:hover .category-icon > picture img {
   transform: scale(1.05);
 }
 
@@ -2514,41 +2529,6 @@ p { margin-bottom: 1rem; }
    Appended to fix missing CSS class names
    ============================================ */
 
-/* --- Page Banner: banner-title / separator / current --- */
-.banner-title {
-  color: var(--color-dark);
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  margin-bottom: 12px;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.page-banner .breadcrumb ol {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  list-style: none;
-}
-
-.page-banner .breadcrumb li {
-  list-style: none;
-  font-size: 0.9rem;
-}
-
-.separator {
-  color: var(--color-gray-400);
-  font-size: 0.75rem;
-  display: inline-flex;
-  align-items: center;
-}
-
-.current {
-  color: var(--color-primary);
-  font-weight: 600;
-}
-
 /* --- About Page: Company Profile --- */
 .company-profile,
 .mission-vision,
@@ -2626,6 +2606,21 @@ p { margin-bottom: 1rem; }
   font-size: 3.5rem;
   color: var(--color-gray-400);
   line-height: 1;
+}
+
+/* --- Picture wrapping fix ---
+   Every <img> is now wrapped in <picture>. The <img> is no longer a direct
+   child of its container, so container rules like height:100% / object-fit
+   broke. Make <picture> fill the image container so the inner <img> keeps
+   its intended sizing (regression fix after WebP <picture> wrapping). */
+.image-placeholder > picture,
+.image-placeholder-factory > picture,
+.product-detail-image > picture,
+.product-image > picture,
+.category-large-image .image-placeholder > picture {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* --- About Page: Mission / Vision --- */
@@ -2718,7 +2713,11 @@ p { margin-bottom: 1rem; }
   position: relative;
 }
 
-.carousel-slide img {
+/* Carousel <img> is wrapped in <picture> — make <picture> fill the slide
+   (same WebP <picture> regression fix as .image-placeholder). */
+.carousel-slide > picture,
+.carousel-slide > picture img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;

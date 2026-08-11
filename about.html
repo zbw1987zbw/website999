@@ -10,16 +10,16 @@
     <link rel="canonical" href="https://ingboex.com/about.html">
     <title>About Us - INGBOEX | 18+ Years Personal Care Appliances Manufacturer</title>
 
-    <!-- Font Awesome 6 CDN -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
-    <link rel="apple-touch-icon" href="/images/favicon-32.png">
+    <!-- Font Awesome 6 (self-hosted in assets/font-awesome/) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" href="images/favicon-32.png">
     <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css?v=6.5.1">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/style.css?v=2.2">
 
     <!-- Schema.org Organization Structured Data -->
     <script type="application/ld+json">
@@ -147,6 +147,7 @@
                             <li><a href="products/hair-straightening-brush.html">Hair Straightening Brush</a></li>
                             <li><a href="products/shaver.html">Shaver</a></li>
                             <li><a href="products/hair-clipper.html">Hair Clipper</a></li>
+                            <li><a href="products/hair-clipper-set.html">Hair Clipper Set</a></li>
                             <li><a href="products/electric-precision-trimmer.html">Electric Precision Trimmer</a></li>
                             <li><a href="products/epilator-and-grooming.html">Epilator &amp; Grooming</a></li>
                         </ul>
@@ -176,18 +177,9 @@
     <main>
 
         <!-- ==================== Page Banner ==================== -->
-        <section class="page-banner page-banner-with-bg" id="page-banner" style="background: linear-gradient(135deg, rgba(15,23,42,0.82) 0%, rgba(30,64,175,0.6) 100%), url('images/about-banner.jpg') center center / cover no-repeat;">
-            <div class="container">
-                <h1 class="banner-title" style="color:#fff;">About Ingboex</h1>
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <ol>
-                        <li><a href="index.html" style="color:rgba(255,255,255,0.85);"><i class="fa-solid fa-house"></i> Home</a></li>
-                        <li class="separator" style="color:rgba(255,255,255,0.5);"><i class="fa-solid fa-chevron-right"></i></li>
-                        <li class="current" style="color:#fff;">About Us</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
+        <section class="page-banner page-banner-with-bg" id="page-banner" style="background: url('images/about-banner.webp') center center / cover no-repeat;">
+        <h1 class="sr-only">About Ingboex</h1>
+    </section>
 
         <!-- ==================== Company Profile ==================== -->
         <section class="company-profile" id="company-profile">
@@ -214,10 +206,16 @@
                     </div>
                     <div class="profile-image">
                         <div class="image-placeholder" style="background:none;border:none;">
-                            <img src="images/about-company-building.jpg" width="600" height="400" alt="INGBOEX Company Building" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);">
+                            <picture>
+  <source srcset="images/about-company-building.webp" type="image/webp">
+  <img src="images/about-company-building.jpg" width="600" height="400" alt="INGBOEX Company Building" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);" loading="lazy">
+</picture>
                         </div>
                         <div class="image-placeholder image-placeholder-small" style="background:none;border:none;">
-                            <img src="images/about-factory-workshop.jpg" width="400" height="300" alt="INGBOEX Factory Workshop" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);">
+                            <picture>
+  <source srcset="images/about-factory-workshop.webp" type="image/webp">
+  <img src="images/about-factory-workshop.jpg" width="400" height="300" alt="INGBOEX Factory Workshop" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-lg);" loading="lazy">
+</picture>
                         </div>
                     </div>
                 </div>
@@ -268,11 +266,26 @@
                     <!-- Factory Image Carousel -->
                     <div class="factory-carousel" id="factory-carousel">
                         <div class="carousel-track">
-                            <div class="carousel-slide active"><img src="images/about-factory-main.jpg" width="700" height="500" alt="INGBOEX Factory — Wenzhou, China"></div>
-                            <div class="carousel-slide"><img src="images/about-factory-1.jpg" width="700" height="500" alt="Production Line — Injection Molding"></div>
-                            <div class="carousel-slide"><img src="images/about-factory-2.jpg" width="700" height="500" alt="Assembly Line — Quality Control"></div>
-                            <div class="carousel-slide"><img src="images/about-factory-3.jpg" width="700" height="500" alt="Testing Equipment — Salt Spray Tester" loading="lazy" decoding="async"></div>
-                            <div class="carousel-slide"><img src="images/about-factory-4.jpg" width="700" height="500" alt="Clean Workshop — Dust-free Production" loading="lazy" decoding="async"></div>
+                            <div class="carousel-slide active"><picture>
+  <source srcset="images/about-factory-main.webp" type="image/webp">
+  <img src="images/about-factory-main.jpg" width="700" height="500" alt="INGBOEX Factory — Wenzhou, China" loading="lazy">
+</picture></div>
+                            <div class="carousel-slide"><picture>
+  <source srcset="images/about-factory-1.webp" type="image/webp">
+  <img src="images/about-factory-1.jpg" width="700" height="500" alt="Production Line — Injection Molding" loading="lazy">
+</picture></div>
+                            <div class="carousel-slide"><picture>
+  <source srcset="images/about-factory-2.webp" type="image/webp">
+  <img src="images/about-factory-2.jpg" width="700" height="500" alt="Assembly Line — Quality Control" loading="lazy">
+</picture></div>
+                            <div class="carousel-slide"><picture>
+  <source srcset="images/about-factory-3.webp" type="image/webp">
+  <img src="images/about-factory-3.jpg" width="700" height="500" alt="Testing Equipment — Salt Spray Tester" loading="lazy" decoding="async">
+</picture></div>
+                            <div class="carousel-slide"><picture>
+  <source srcset="images/about-factory-4.webp" type="image/webp">
+  <img src="images/about-factory-4.jpg" width="700" height="500" alt="Clean Workshop — Dust-free Production" loading="lazy" decoding="async">
+</picture></div>
                         </div>
                         <button class="carousel-btn carousel-prev" onclick="carouselSlide(-1)" aria-label="Previous">&#10094;</button>
                         <button class="carousel-btn carousel-next" onclick="carouselSlide(1)" aria-label="Next">&#10095;</button>
@@ -331,7 +344,10 @@
                     <!-- Sarah Chang -->
                     <div class="team-card">
                         <div class="team-avatar">
-                            <img src="images/team-sarah.jpg" width="300" height="300" alt="Sarah Chang" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+                            <picture>
+  <source srcset="images/team-sarah.webp" type="image/webp">
+  <img src="images/team-sarah.jpg" width="300" height="300" alt="Sarah Chang" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+</picture>
                         </div>
                         <div class="team-info">
                             <h3 class="team-name">Sarah Chang</h3>
@@ -346,7 +362,10 @@
                     <!-- Selina Li -->
                     <div class="team-card">
                         <div class="team-avatar">
-                            <img src="images/team-selina.jpg" width="300" height="300" alt="Selina Li" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+                            <picture>
+  <source srcset="images/team-selina.webp" type="image/webp">
+  <img src="images/team-selina.jpg" width="300" height="300" alt="Selina Li" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+</picture>
                         </div>
                         <div class="team-info">
                             <h3 class="team-name">Selina Li</h3>
@@ -361,7 +380,10 @@
                     <!-- Bill Zhang -->
                     <div class="team-card">
                         <div class="team-avatar">
-                            <img src="images/team-bill.jpg" width="300" height="300" alt="Bill Zhang" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+                            <picture>
+  <source srcset="images/team-bill.webp" type="image/webp">
+  <img src="images/team-bill.jpg" width="300" height="300" alt="Bill Zhang" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+</picture>
                         </div>
                         <div class="team-info">
                             <h3 class="team-name">Bill Zhang</h3>
@@ -376,7 +398,10 @@
                     <!-- Yvonnie Chang -->
                     <div class="team-card">
                         <div class="team-avatar">
-                            <img src="images/team-yvonnie.jpg" width="300" height="300" alt="Yvonnie Chang" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+                            <picture>
+  <source srcset="images/team-yvonnie.webp" type="image/webp">
+  <img src="images/team-yvonnie.jpg" width="300" height="300" alt="Yvonnie Chang" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" loading="lazy" decoding="async">
+</picture>
                         </div>
                         <div class="team-info">
                             <h3 class="team-name">Yvonnie Chang</h3>
@@ -441,48 +466,13 @@
                         <h3 class="cert-name">ROHS</h3>
                         <p class="cert-desc">Restriction of Hazardous Substances compliance — all materials used are environmentally safe and free from restricted substances.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ==================== Certificates Gallery ==================== -->
-        <section class="cert-gallery" id="cert-gallery" style="padding:80px 0;background:var(--color-gray-100);">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Compliance Documents</span>
-                    <h2 class="section-title">Certifications for Quality and Compliance</h2>
-                    <p class="section-subtitle">View our official certification documents that verify our products meet international quality and safety standards</p>
-                </div>
-                <div class="cert-gallery-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:25px;">
-                    <div class="cert-gallery-item" style="text-align:center;">
-                        <img src="images/cert-iso9001.jpg" width="400" height="560" alt="ISO 9001 Certificate" style="width:100%;aspect-ratio:5/7;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-gray-200);" loading="lazy" decoding="async">
-                        <h4 style="margin-top:12px;font-size:1rem;">ISO 9001</h4>
-                        <p style="font-size:0.85rem;color:var(--color-gray-600);">Quality Management System</p>
-                    </div>
-                    <div class="cert-gallery-item" style="text-align:center;">
-                        <img src="images/cert-ce.jpg" width="400" height="560" alt="CE Certificate" style="width:100%;aspect-ratio:5/7;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-gray-200);" loading="lazy" decoding="async">
-                        <h4 style="margin-top:12px;font-size:1rem;">CE</h4>
-                        <p style="font-size:0.85rem;color:var(--color-gray-600);">European Conformity</p>
-                    </div>
-                    <div class="cert-gallery-item" style="text-align:center;">
-                        <img src="images/cert-gs.jpg" width="400" height="560" alt="GS Certificate" style="width:100%;aspect-ratio:5/7;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-gray-200);" loading="lazy" decoding="async">
-                        <h4 style="margin-top:12px;font-size:1rem;">GS</h4>
-                        <p style="font-size:0.85rem;color:var(--color-gray-600);">Geprufte Sicherheit (German Safety)</p>
-                    </div>
-                    <div class="cert-gallery-item" style="text-align:center;">
-                        <img src="images/cert-emc.jpg" width="400" height="560" alt="EMC Certificate" style="width:100%;aspect-ratio:5/7;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-gray-200);" loading="lazy" decoding="async">
-                        <h4 style="margin-top:12px;font-size:1rem;">EMC</h4>
-                        <p style="font-size:0.85rem;color:var(--color-gray-600);">Electromagnetic Compatibility</p>
-                    </div>
-                    <div class="cert-gallery-item" style="text-align:center;">
-                        <img src="images/cert-rohs.jpg" width="400" height="560" alt="ROHS Certificate" style="width:100%;aspect-ratio:5/7;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-gray-200);" loading="lazy" decoding="async">
-                        <h4 style="margin-top:12px;font-size:1rem;">ROHS</h4>
-                        <p style="font-size:0.85rem;color:var(--color-gray-600);">Restriction of Hazardous Substances</p>
-                    </div>
-                    <div class="cert-gallery-item" style="text-align:center;">
-                        <img src="images/cert-lvd.jpg" width="400" height="560" alt="LVD Certificate" style="width:100%;aspect-ratio:5/7;object-fit:cover;border-radius:var(--radius-md);box-shadow:var(--shadow-md);border:1px solid var(--color-gray-200);" loading="lazy" decoding="async">
-                        <h4 style="margin-top:12px;font-size:1rem;">LVD</h4>
-                        <p style="font-size:0.85rem;color:var(--color-gray-600);">Low Voltage Directive</p>
+                    <!-- LVD -->
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fa-solid fa-plug"></i>
+                        </div>
+                        <h3 class="cert-name">LVD</h3>
+                        <p class="cert-desc">Low Voltage Directive (2014/35/EU) compliance — our electrical appliances meet EU safety requirements for equipment operating within specified voltage limits.</p>
                     </div>
                 </div>
             </div>

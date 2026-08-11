@@ -10,16 +10,16 @@
     <link rel="canonical" href="https://ingboex.com/products.html">
     <title>Products - INGBOEX | Personal Care Appliances Manufacturer</title>
 
-    <!-- Font Awesome 6 CDN -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png">
-    <link rel="apple-touch-icon" href="/images/favicon-32.png">
+    <!-- Font Awesome 6 (self-hosted in assets/font-awesome/) -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" href="images/favicon-32.png">
     <meta name="theme-color" content="#2563eb">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.min.css?v=6.5.1">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="css/style.css?v=2.0">
+    <link rel="stylesheet" href="css/style.css?v=2.2">
 
     <!-- Schema.org CollectionPage + ItemList -->
     <script type="application/ld+json">
@@ -110,7 +110,7 @@
                     "item": {
                         "@type": "Product",
                         "name": "Hair Clipper Set",
-                        "url": "https://ingboex.com/products/hair-clipper.html",
+                        "url": "https://ingboex.com/products/hair-clipper-set.html",
                         "description": "Complete hair clipper kit sets"
                     }
                 },
@@ -206,6 +206,7 @@
                             <li><a href="products/hair-straightening-brush.html">Hair Straightening Brush</a></li>
                             <li><a href="products/shaver.html">Shaver</a></li>
                             <li><a href="products/hair-clipper.html">Hair Clipper</a></li>
+                            <li><a href="products/hair-clipper-set.html">Hair Clipper Set</a></li>
                             <li><a href="products/electric-precision-trimmer.html">Electric Precision Trimmer</a></li>
                             <li><a href="products/epilator-and-grooming.html">Epilator &amp; Grooming</a></li>
                         </ul>
@@ -235,18 +236,9 @@
     <main>
 
         <!-- ==================== Page Banner ==================== -->
-        <section class="page-banner" id="page-banner" style="background: linear-gradient(135deg, rgba(15,23,42,0.82) 0%, rgba(30,64,175,0.6) 100%), url('images/banner-products.jpg') center center / cover no-repeat;">
-            <div class="container">
-                <h1 class="banner-title" style="color:#fff;">Our Products</h1>
-                <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <ol>
-                        <li><a href="index.html" style="color:rgba(255,255,255,0.85);"><i class="fa-solid fa-house"></i> Home</a></li>
-                        <li class="separator" style="color:rgba(255,255,255,0.5);"><i class="fa-solid fa-chevron-right"></i></li>
-                        <li class="current" style="color:#fff;">Products</li>
-                    </ol>
-                </nav>
-            </div>
-        </section>
+        <section class="page-banner" id="page-banner" style="background: url('images/banner-products.webp') center center / cover no-repeat;">
+        <h1 class="sr-only">Our Products</h1>
+    </section>
 
         <!-- ==================== Product Line Overview ==================== -->
         <section class="product-overview" id="product-overview">
@@ -294,7 +286,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hair-dryer.jpg" width="300" height="300" alt="Hair Dryer" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                                <picture>
+  <source srcset="images/cat-hair-dryer.webp" type="image/webp">
+  <img src="images/cat-hair-dryer.jpg" width="300" height="300" alt="Hair Dryer" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -318,7 +313,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hot-air-brush.jpg" width="300" height="300" alt="Hot Air Brush" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                                <picture>
+  <source srcset="images/cat-hot-air-brush.webp" type="image/webp">
+  <img src="images/cat-hot-air-brush.jpg" width="300" height="300" alt="Hot Air Brush" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -342,7 +340,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hair-straightener.jpg" width="300" height="300" alt="Hair Straightener" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);">
+                                <picture>
+  <source srcset="images/cat-hair-straightener.webp" type="image/webp">
+  <img src="images/cat-hair-straightener.jpg" width="300" height="300" alt="Hair Straightener" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -366,7 +367,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hair-curler.jpg" width="300" height="300" alt="Hair Curler" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-hair-curler.webp" type="image/webp">
+  <img src="images/cat-hair-curler.jpg" width="300" height="300" alt="Hair Curler" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -390,7 +394,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hair-straightening-brush.jpg" width="300" height="300" alt="Hair Straightening Brush" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-hair-straightening-brush.webp" type="image/webp">
+  <img src="images/cat-hair-straightening-brush.jpg" width="300" height="300" alt="Hair Straightening Brush" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -398,7 +405,7 @@
                     <!-- 6. Shaver -->
                     <article class="category-large-card">
                         <div class="category-large-icon">
-                            <i class="fa-solid fa-razor"></i>
+                            <i class="fa-brands fa-usb"></i>
                         </div>
                         <div class="category-large-content">
                             <div class="category-large-header">
@@ -415,7 +422,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-shaver.jpg" width="300" height="300" alt="Shaver" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-shaver.webp" type="image/webp">
+  <img src="images/cat-shaver.jpg" width="300" height="300" alt="Shaver" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -440,7 +450,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hair-clipper.jpg" width="300" height="300" alt="Hair Clipper" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-hair-clipper.webp" type="image/webp">
+  <img src="images/cat-hair-clipper.jpg" width="300" height="300" alt="Hair Clipper" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -460,11 +473,14 @@
                                 <span class="tag">Full Kit</span>
                                 <span class="tag">Multiple Combs</span>
                             </div>
-                            <a href="products/hair-clipper.html" class="btn btn-primary btn-sm">View Products <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="products/hair-clipper-set.html" class="btn btn-primary btn-sm">View Products <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-hair-clipper-set.jpg" width="300" height="300" alt="Hair Clipper Set" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-hair-clipper-set.webp" type="image/webp">
+  <img src="images/cat-hair-clipper-set.jpg" width="300" height="300" alt="Hair Clipper Set" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -488,7 +504,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-trimmer.jpg" width="300" height="300" alt="Electric Precision Trimmer" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-trimmer.webp" type="image/webp">
+  <img src="images/cat-trimmer.jpg" width="300" height="300" alt="Electric Precision Trimmer" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
@@ -513,7 +532,10 @@
                         </div>
                         <div class="category-large-image">
                             <div class="image-placeholder" style="background:none;border:none;">
-                                <img src="images/cat-epilator.jpg" width="300" height="300" alt="Epilator and Grooming" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+                                <picture>
+  <source srcset="images/cat-epilator.webp" type="image/webp">
+  <img src="images/cat-epilator.jpg" width="300" height="300" alt="Epilator and Grooming" style="width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);" loading="lazy" decoding="async">
+</picture>
                             </div>
                         </div>
                     </article>
