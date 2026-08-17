@@ -266,7 +266,7 @@ p { margin-bottom: 1rem; }
   height: 42px;
   background: var(--color-primary);
   border-radius: var(--radius-sm);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
@@ -1783,10 +1783,12 @@ p { margin-bottom: 1rem; }
 }
 
 .logo-text {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 800;
-  color: var(--color-dark);
+  font-family: 'Arial Black', Arial, sans-serif;
+  color: #9E1B32;
   letter-spacing: 0.5px;
+  font-style: italic;
 }
 
 .nav-menu {
@@ -2332,10 +2334,12 @@ p { margin-bottom: 1rem; }
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 800;
-  color: var(--color-white);
+  font-family: 'Arial Black', Arial, sans-serif;
+  color: #9E1B32;
   margin-bottom: 20px;
+  font-style: italic;
 }
 
 .footer-logo i {
@@ -2343,7 +2347,7 @@ p { margin-bottom: 1rem; }
   height: 42px;
   background: var(--color-primary);
   border-radius: var(--radius-sm);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
