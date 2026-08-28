@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var feedbackEl = contactForm.querySelector('#form-feedback');
 
         // 通过 Formsubmit.co AJAX 提交
-        fetch('https://formsubmit.co/ajax/billzhang@ingboex.com', {
+        fetch('https://formsubmit.co/ajax/sarahchang@ingboex.com', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function() {
             feedbackEl.style.display = 'block';
             feedbackEl.style.background = '#fef3c7';
             feedbackEl.style.color = '#92400e';
-            feedbackEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Network error. Please try again, or email us directly at billzhang@ingboex.com';
+            feedbackEl.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Network error. Please try again, or email us directly at sarahchang@ingboex.com';
           }
         });
       }
