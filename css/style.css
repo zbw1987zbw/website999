@@ -3204,6 +3204,12 @@ p { margin-bottom: 1rem; }
   color: var(--color-gray-400);
 }
 
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .blog-card-content {
   padding: 25px;
   flex: 1;
